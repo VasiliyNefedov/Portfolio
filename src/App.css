@@ -1,0 +1,101 @@
+body {
+  padding: 0;
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(192, 192, 192);
+}
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "header header"
+    "side-bar content" 
+    "footer footer";
+  grid-gap: 10px;
+  max-width: 1200px;
+}
+
+.decor {
+  background-color: rgba(76, 128, 177, 0.3);
+  border-radius: 5px;
+  border: 2px solid rgb(73, 100, 107);
+}
+
+
+
+
+
+.photo {
+  grid-area: photo;
+  /* border-radius: 50%; */
+  height: 300px;
+  overflow: hidden;
+  margin: 0;
+}
+
+
+
+#my-photo {
+  height: auto;
+}
+
+@media screen and (max-width: 680px) {
+  .photo,
+  .block3 {
+    display: none;
+  }
+  .wrapper {
+    grid-template-columns: minmax(270px, auto);
+    grid-template-areas:
+      "header"
+      "block1"
+      "block2"
+      "block4"
+      "footer";
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  11.11% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  44.44% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.photo {
+  position: relative;
+  width: 296px;
+}
+.photo img {
+  position: absolute;
+  /* width: 100%;
+    left: 0;
+    right: 0; */
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+.photo img:nth-child(1) {
+  animation-delay: 0s;
+}
+.photo img:nth-child(2) {
+  animation-delay: 4s;
+}
+.photo img:nth-child(3) {
+  animation-delay: 8s;
+}
+

@@ -1,0 +1,12 @@
+.post {
+  margin: 20px;
+  padding: 0;
+}
+
+.nickName {
+  background-color: whitesmoke;
+}
+
+.post_text {
+  color: black;
+}

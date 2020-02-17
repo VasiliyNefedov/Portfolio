@@ -1,0 +1,22 @@
+.side-bar {
+    margin: 0;
+    padding: 0;
+  }
+
+.side-bar__item {
+    /* color: whitesmoke; */
+    padding: 5px 10px;
+    margin: 3px;
+}
+.side-bar__item:hover {
+  background-color: whitesmoke;
+  /* padding: 5px 15px; */
+  border-radius: 2px;
+  color: black; 
+
+
+}
+.active > .side-bar__item {
+  /* font-style: oblique; */
+  font-weight: bold;
+}

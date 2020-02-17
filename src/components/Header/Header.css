@@ -1,0 +1,13 @@
+.header {
+    grid-area: header;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 2px solid rgb(73, 100, 107);
+    border-left: 2px solid rgb(73, 100, 107);
+    border-right: 2px solid rgb(73, 100, 107);
+    /* height: 100px; */
+    background-color: rgb(84, 250, 236);
+    background-image: url(./img/header.jpg);
+    background-position: left bottom;
+    min-width: 266px;
+  }

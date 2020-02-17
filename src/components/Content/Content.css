@@ -1,0 +1,21 @@
+.content {
+  margin: 0;
+  padding: 0;
+  grid-area: content;
+
+}
+/* .main {
+  background-color: rgba(76, 128, 177, 0.3);
+  border-radius: 5px;
+  border: 2px solid rgb(73, 100, 107);
+  overflow: hidden;
+}
+.main__pic {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+.main__avatar {
+  max-width: 250px;
+  height: auto;
+} */

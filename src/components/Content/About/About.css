@@ -1,0 +1,11 @@
+.about {
+  margin: 0;
+  padding: 0;
+  min-height: calc(100% - 4px);
+}
+
+.about-text {
+  margin: 0px;
+  padding: 0 10px;
+  text-indent: 1.5em;
+}
