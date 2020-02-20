@@ -1,6 +1,9 @@
 import React from "react";
 import "./Messages.css";
 import ShowMessages from "./ShowMessages/ShowMessages";
+import { addPostActionCreator } from "../../../redux/state";
+
+
 
 const Messages = props => {
   let newPostText = React.createRef();
@@ -9,9 +12,10 @@ const Messages = props => {
   let addPost = () => {
     let text = newPostText.current.value;
     let name = newPostName.current.value;
-    props.addPost(text, name);
-    newPostText.current.value = '';
-    newPostName.current.value = '';
+    props.dispatch(addPostActionCreator(text, name));
+
+    newPostText.current.value = "";
+    newPostName.current.value = "";
   };
 
   return (

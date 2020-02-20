@@ -5,7 +5,6 @@ import Messages from "./Messages/Messages";
 import { Route } from "react-router-dom";
 import About from "./About/About";
 import Contacts from "./Contacts/Contacts";
-import { render } from "@testing-library/react";
 import Projects from "./Projects/Projects";
 
 const Content = props => {
@@ -17,7 +16,7 @@ const Content = props => {
         exact
         path="/messages"
         render={() => (
-          <Messages messageData={props.messageData} addPost={props.addPost} />
+          <Messages messageData={props.messageData} dispatch={props.dispatch} />
         )}
       />
       <Route path="/about" component={About} />

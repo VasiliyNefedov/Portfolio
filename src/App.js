@@ -12,7 +12,7 @@ function App(props) {
       <div className="wrapper">
         <Header />
         <NavBar />
-        <Content messageData={props.messageData} addPost={props.addPost} />
+        <Content messageData={props.messageData} dispatch={props.dispatch} />
         <Footer />
       </div>
     </BrowserRouter>
